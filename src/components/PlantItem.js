@@ -3,6 +3,7 @@ import CareScale from "./CareScale";
 import "../styles/PlantItem.css";
 
 function PlantItem({ id, name, cover, light, water }) {
+  // Composant parent ShopingList
   function handleClick(e) {
     console.log('voici mon event ', e);
   }

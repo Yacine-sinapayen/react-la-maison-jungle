@@ -2,7 +2,7 @@ import Sun from '../assets/sun.svg';
 import Water from '../assets/water.svg';
 
 function CareScale({ scaleValue, careType}) {
-
+// Composant parent PLantItem
 /* je récupère mes props 'scaleValue' et 'careType' depuis mon composant parents "PlantItems" 
 Si je n'avais pas déclarer mes props directement dans les paramètres de ma fonctinon(ci-dessus) j'aurais pu les écrires ainsi grace à la destructuration: 
     const { scaleValue, careType } = props;
@@ -25,7 +25,7 @@ function plantNeeds(){
     alert(`Cette plante requiert ${quantityLabel[scaleValue]} ${careType === 'light' ? 'de lumière' : "d'arrosage"}`)
 }
 
-/* s'il s'agit d'un composant CareScale de type "water" ou de type "light".*/
+/* S'il s'agit d'un composant CareScale de type "water" ou de type "light".*/
 
 const range = [1, 2, 3]
 
