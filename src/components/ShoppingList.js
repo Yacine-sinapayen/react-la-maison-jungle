@@ -1,13 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { plantList } from "../datas/plantList";
 import "../styles/ShoppingList.css";
 import PlantItem from "./PlantItem";
 import Categories from "./Categories";
 
-function ShoppingList({ cart, updateCart }) {
+function ShoppingList({ cart, updateCart, activeCategory, setActiveCategory }) {
   // Composant parent App.js
-  /* Création d'un select pour filtrer par 'categories' */
-  const [activeCategory, setActiveCategory] = useState("");
 
   /* Petite précision : categories nous vient de la partie précédente pour récupérer toutes les catégories uniques de plantes.*/
   const categories = plantList.reduce(
@@ -36,7 +34,6 @@ function ShoppingList({ cart, updateCart }) {
   function addToCart(name, price) {
     // 2
     const currentPlantSaved = cart.find((plant) => plant.name === name);
-    console.log(currentPlantSaved);
     // 3
     if (currentPlantSaved) {
       // 3.a
