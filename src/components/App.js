@@ -9,7 +9,7 @@ import "../styles/Layout.css";
 // import QuestionFormNoControl from "./QuestionFormNoControl";
 
 function App() {
-  /* Mise en place du localStorage :
+/* Mise en place du localStorage :
 1 - j'initie une const "savedcart" qui récupère dans mon localStorage les produits déjà ajouter au panier.
 
 2 - Le ternaire de mon state veut dit : il y a t'il déjà des item dans mon panier ? 

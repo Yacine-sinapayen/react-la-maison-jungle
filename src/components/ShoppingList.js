@@ -76,9 +76,7 @@ function ShoppingList({ cart, updateCart, activeCategory, setActiveCategory }) {
               />
               <button onClick={() => addToCart(name, price)}>Ajouter</button>
             </div>
-
           ) : null
-          
         )}
       </ul>
     </div>
